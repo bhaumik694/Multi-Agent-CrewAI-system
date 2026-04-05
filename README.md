@@ -85,21 +85,7 @@ python main.py
 
 The generated README is saved as `README_generated.md` in the project root.
 
----
 
-## GitHub Utility Details
-
-`github_utils.py` handles all repository data extraction with a smart prioritization strategy:
-
-- **README first** — always fetched for high-level context
-- **Priority files** — entry points and core files (`main`, `app`, `server`, `index`, `api`, `routes`, `controllers`, etc.) are fetched next
-- **Fallback sampling** — if too few files are found, a broader sample is taken
-- **Hard limits** — token-efficient content slicing and a file cap keep LLM context manageable
-- **Ignored paths** — `node_modules`, `dist`, `build`, `__pycache__`, `.git` are automatically excluded
-
-Supported file types: `.py`, `.js`, `.ts`, `.tsx`, `.jsx`, `.json`, `.md`, `.yaml`, `.yml`
-
----
 
 ## Tech Stack
 
