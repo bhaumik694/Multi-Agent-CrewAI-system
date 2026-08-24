@@ -1,0 +1,29 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Testing / cache
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+
+# Generated files
+README_generated.md
+
+# OS
+.DS_Store
+Thumbs.db
